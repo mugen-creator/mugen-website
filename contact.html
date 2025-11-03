@@ -364,57 +364,7 @@
         });
       });
 
-      // Form validation
-      const contactForm = document.getElementById('contactForm');
-      if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-          // Basic form validation
-          const isValid = contactForm.checkValidity();
-
-          if (!isValid) {
-            e.preventDefault();
-            // Highlight invalid fields with custom styling
-            const invalidFields = contactForm.querySelectorAll(':invalid');
-            invalidFields.forEach(field => {
-              field.classList.add('invalid');
-
-              // Add validation message
-              let message = field.nextElementSibling;
-              if (!message || !message.classList.contains('validation-message')) {
-                message = document.createElement('div');
-                message.className = 'validation-message';
-                field.parentNode.insertBefore(message, field.nextElementSibling);
-              }
-
-              message.textContent = field.dataset.validationMessage || '入力内容を確認してください';
-
-              // Remove invalid class on input
-              field.addEventListener('input', () => {
-                if (field.validity.valid) {
-                  field.classList.remove('invalid');
-                  if (message) {
-                    message.textContent = '';
-                  }
-                }
-              });
-            });
-
-            // Scroll to first invalid field
-            if (invalidFields.length > 0) {
-              const firstInvalidField = invalidFields[0];
-              const headerHeight = document.querySelector('.header')?.offsetHeight || 0;
-              const fieldPosition = firstInvalidField.getBoundingClientRect().top + window.scrollY - headerHeight - 20;
-
-              window.scrollTo({
-                top: fieldPosition,
-                behavior: 'smooth'
-              });
-
-              firstInvalidField.focus();
-            }
-          }
-        });
-      }
+      // Form validation removed - letting Netlify handle form submission natively
     });
   </script>
 </body>
