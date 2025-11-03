@@ -1,0 +1,256 @@
+/* 
+ * MUGEN LLC - Text Enhancements
+ * ============================================
+ * Text-specific enhancements and typography utilities
+ */
+
+/* ----- TEXT ANIMATION ENHANCEMENTS ----- */
+
+/* Gradient text effect */
+.text-gradient-gold {
+    background: linear-gradient(45deg, var(--color-accent-primary), var(--color-accent-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Text glow effect */
+.text-glow {
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.5),
+        0 0 20px rgba(212, 175, 55, 0.3),
+        0 0 30px rgba(212, 175, 55, 0.1);
+}
+
+/* Typing animation effect */
+.typing-effect {
+    overflow: hidden;
+    border-right: 2px solid var(--color-accent-primary);
+    white-space: nowrap;
+    animation: typing 3s steps(40, end), blink 0.8s infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        border-color: var(--color-accent-primary);
+    }
+
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Text reveal on scroll */
+.text-reveal-scroll {
+    background: linear-gradient(to right,
+            var(--color-text-primary) 0%,
+            var(--color-text-primary) var(--reveal-progress, 0%),
+            var(--color-text-tertiary) var(--reveal-progress, 0%),
+            var(--color-text-tertiary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Enhanced letter spacing for luxury feel */
+.letter-spacing-luxury {
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+/* Drop cap styling */
+.drop-cap::first-letter {
+    float: left;
+    font-size: 4em;
+    line-height: 0.8;
+    margin: 0.1em 0.1em 0 0;
+    color: var(--color-accent-primary);
+    font-family: var(--font-primary);
+}
+
+/* Text stroke effect */
+.text-stroke {
+    -webkit-text-stroke: 1px var(--color-accent-primary);
+    -webkit-text-fill-color: transparent;
+    text-stroke: 1px var(--color-accent-primary);
+    text-fill-color: transparent;
+}
+
+/* Elegant quote styling */
+.elegant-quote {
+    position: relative;
+    font-style: italic;
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-relaxed);
+    padding: var(--spacing-6) var(--spacing-8);
+    margin: var(--spacing-8) 0;
+}
+
+.elegant-quote::before,
+.elegant-quote::after {
+    content: '"';
+    font-size: var(--font-size-4xl);
+    color: var(--color-accent-primary);
+    position: absolute;
+    font-family: var(--font-primary);
+}
+
+.elegant-quote::before {
+    top: 0;
+    left: 0;
+}
+
+.elegant-quote::after {
+    bottom: -0.5em;
+    right: 0;
+}
+
+/* Text highlight effect */
+.text-highlight {
+    background: linear-gradient(120deg, transparent 0%, transparent 40%,
+            rgba(212, 175, 55, 0.3) 40%, rgba(212, 175, 55, 0.3) 60%,
+            transparent 60%);
+    background-size: 200% 100%;
+    background-position: 200% 0;
+    transition: background-position 0.6s ease-in-out;
+}
+
+.text-highlight.active,
+.text-highlight:hover {
+    background-position: 0 0;
+}
+
+/* Japanese text enhancements */
+.japanese-text {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-feature-settings: "palt" 1;
+    /* Proportional alternate metrics */
+    line-height: 1.8;
+}
+
+/* Western text optimization */
+.western-text {
+    font-family: 'Noto Serif JP', serif;
+    font-feature-settings: "kern" 1, "liga" 1;
+    /* Kerning and ligatures */
+}
+
+/* Responsive text sizing */
+.responsive-text {
+    font-size: clamp(var(--font-size-sm), 4vw, var(--font-size-xl));
+}
+
+/* Text selection styling */
+::selection {
+    background-color: rgba(212, 175, 55, 0.3);
+    color: var(--color-text-primary);
+}
+
+::-moz-selection {
+    background-color: rgba(212, 175, 55, 0.3);
+    color: var(--color-text-primary);
+}
+
+/* Enhanced link styling */
+.enhanced-link {
+    position: relative;
+    color: var(--color-accent-primary);
+    text-decoration: none;
+    transition: color var(--transition-duration-normal) var(--transition-timing-luxury);
+}
+
+.enhanced-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: linear-gradient(to right, var(--color-accent-primary), var(--color-accent-secondary));
+    transition: width var(--transition-duration-slow) var(--transition-timing-luxury);
+}
+
+.enhanced-link:hover::after {
+    width: 100%;
+}
+
+/* Number styling for statistics */
+.stat-number {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: var(--font-size-4xl);
+    line-height: 1;
+    color: var(--color-accent-primary);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Caption styling */
+.caption-text {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-tertiary);
+    font-style: italic;
+    text-align: center;
+    margin-top: var(--spacing-2);
+}
+
+/* Label styling */
+.label-text {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-secondary);
+    font-weight: 500;
+    letter-spacing: var(--letter-spacing-widest);
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-2);
+}
+
+/* Accessibility improvements */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Focus styles for text elements */
+.enhanced-link:focus,
+.text-gradient-gold:focus {
+    outline: 2px solid var(--color-accent-primary);
+    outline-offset: 2px;
+}
+
+/* Print-specific text styles */
+@media print {
+
+    .text-gradient-gold,
+    .text-stroke {
+        -webkit-text-fill-color: initial;
+        text-fill-color: initial;
+        color: black;
+    }
+
+    .text-glow {
+        text-shadow: none;
+    }
+
+    .enhanced-link {
+        color: black;
+        text-decoration: underline;
+    }
+}

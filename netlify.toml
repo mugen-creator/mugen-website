@@ -1,0 +1,19 @@
+# Netlify Configuration
+
+# Build settings
+[build]
+  publish = "."
+
+# Headers for security
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "no-referrer-when-downgrade"
+
+# Note: Form email notifications must be configured in Netlify dashboard
+# Go to: Site settings > Forms > Form notifications
+# Add two email notifications:
+# 1. To: info@mugenllc.click (for admin notifications)
+# 2. To: {{email}} (for auto-reply to submitter)

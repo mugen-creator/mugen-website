@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <title>市場分析 | 合同会社無限</title>
+  <meta name="description" content="合同会社無限が分析する営業代行・マーケティング支援市場の動向と当社のポジショニングについて詳しくご紹介します。">
+
+  <!-- OGP Tags -->
+  <meta property="og:title" content="市場分析 | 合同会社無限">
+  <meta property="og:description" content="合同会社無限が分析する営業代行・マーケティング支援市場の動向と当社のポジショニングについて">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mugenllc.click/market.html">
+  <meta property="og:image" content="https://mugenllc.click/images/ogp.jpg">
+  <meta property="og:site_name" content="合同会社無限">
+  <meta property="og:locale" content="ja_JP">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="市場分析 | 合同会社無限">
+  <meta name="twitter:description" content="合同会社無限が分析する営業代行・マーケティング支援市場の動向と当社のポジショニングについて">
+  <meta name="twitter:image" content="https://mugenllc.click/images/ogp.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/reset-base.css">
+  <link rel="stylesheet" href="css/layout-components.css">
+  <link rel="stylesheet" href="css/animations-effects.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/text-enhancements.css">
+  <link rel="stylesheet" href="css/header-urgent-fix.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Chart.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+</head>
+
+<body>
+  <!-- Loader -->
+  <div class="loader">
+    <div class="loader-content">
+      <div class="loader-logo">MARKET</div>
+    </div>
+  </div>
+
+  <!-- WebGL Background Canvas -->
+  <div id="webgl-canvas"></div>
+
+  <!-- Page Transition Element -->
+  <div class="page-transition"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <a href="index.html">
+          <h1>合同会社無限</h1>
+        </a>
+      </div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="company.html">COMPANY<span class="nav-ja">会社概要</span></a></li>
+          <li class="nav-item"><a href="services.html">SERVICES<span class="nav-ja">事業内容</span></a></li>
+          <li class="nav-item active"><a href="market.html">MARKET<span class="nav-ja">市場分析</span></a></li>
+          <li class="nav-item"><a href="contact.html">CONTACT<span class="nav-ja">お問い合わせ</span></a></li>
+        </ul>
+      </nav>
+      <div class="menu-trigger">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="page-content">
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title split-heading">市場分析</h1>
+      </div>
+    </section>
+
+    <!-- Market Overview Section -->
+    <section class="section market-overview-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title fade-in">MARKET ENVIRONMENT</h2>
+          <p class="section-subtitle fade-in delay-300">市場環境</p>
+        </div>
+        <div class="market-grid">
+          <div class="market-item fade-in delay-300">
+            <div class="market-icon">
+              <div class="market-number">01</div>
+            </div>
+            <h3>営業代行市場</h3>
+            <div class="market-stats">
+              <div class="stat-label">年間成長率</div>
+              <div class="counter-wrapper">
+                <p class="stat-value counter" data-target="6.2">6.2%</p>
+              </div>
+            </div>
+            <div class="market-stats">
+              <div class="stat-label">市場規模</div>
+              <div class="counter-wrapper">
+                <p class="stat-value counter" data-target="5800">5800億円</p>
+              </div>
+            </div>
+            <p class="market-detail">
+              人材不足を背景に外部委託ニーズが拡大しており、特に中小企業における営業代行サービスの需要が増加傾向にあります。顧客接点の多様化により、複合的なアプローチが求められています。</p>
+          </div>
+
+          <div class="market-item fade-in delay-400">
+            <div class="market-icon">
+              <div class="market-number">02</div>
+            </div>
+            <h3>デジタルマーケティング市場</h3>
+            <div class="market-stats">
+              <div class="stat-label">年間成長率</div>
+              <div class="counter-wrapper">
+                <p class="stat-value counter" data-target="14.5">14.5%</p>
+              </div>
+            </div>
+            <div class="market-stats">
+              <div class="stat-label">市場規模(億円)</div>
+              <div class="counter-wrapper">
+                <p class="stat-value counter" data-target="15000">15000億円</p>
+              </div>
+            </div>
+            <p class="market-detail">
+              企業のDX推進に伴い、デジタルマーケティングへの投資が拡大。特にコンテンツマーケティングとSNS運用の外部委託が増加しています。データ活用の重要性が高まり、専門性の高いサービスへのニーズが拡大しています。</p>
+          </div>
+
+          <div class="market-item fade-in delay-500">
+            <div class="market-icon">
+              <div class="market-number">03</div>
+            </div>
+            <h3>営業・マーケティングDX</h3>
+            <p class="market-highlight">デジタル化による営業・マーケティングプロセス改革需要の拡大</p>
+            <p class="market-detail">
+              従来の営業手法とデジタルマーケティングを融合させた新しいアプローチへのニーズが高まっています。中小企業においても、データ活用と効率化が課題となっており、営業活動とマーケティング活動の一体化を促進するサービスへの需要が拡大しています。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Market Trend Visualization -->
+    <section class="section market-visualization-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title fade-in">MARKET TRENDS</h2>
+          <p class="section-subtitle fade-in delay-300">市場トレンド</p>
+        </div>
+        <div class="market-visualization fade-in delay-300">
+          <div class="trend-graph">
+            <div class="market-canvas-container">
+              <canvas id="marketTrendCanvas"></canvas>
+            </div>
+          </div>
+          <div style="height: 3rem;"></div>
+          <div class="trend-analysis fade-in delay-400">
+            <h3>市場トレンド分析</h3>
+            <ul>
+              <li><strong>デジタルシフトの加速：</strong>コロナ禍を契機に、対面営業からデジタルチャネルへのシフトが加速</li>
+              <li><strong>マーケティングオートメーション拡大：</strong>営業・マーケティングプロセスの自動化技術の導入が拡大</li>
+              <li><strong>データドリブン化：</strong>意思決定におけるデータ活用の重要性が増大し、分析サービスの需要が拡大</li>
+              <li><strong>インサイドセールス強化：</strong>リモートでの営業活動を効率的に行うインサイドセールス機能の重要性向上</li>
+              <li><strong>営業とマーケティングの融合：</strong>従来は分断されていた営業部門とマーケティング部門の連携強化</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Target Clients Section -->
+    <section class="section target-clients-section">
+      <div class="particles-container"></div>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title fade-in">TARGET CLIENTS</h2>
+          <p class="section-subtitle fade-in delay-300">ターゲット顧客</p>
+        </div>
+        <div class="target-content fade-in delay-300">
+          <div class="target-description">
+            <div class="target-icon">
+              <div class="icon-circle target"></div>
+            </div>
+            <div class="target-text">
+              <h3>主なターゲット層</h3>
+              <ul>
+                <li>・年商1億円〜50億円の中小企業</li>
+                <li>・営業・マーケティング部門の強化を図る成長企業</li>
+                <li>・IT/SaaS、製造業、専門サービス業界</li>
+                <li>・安定した営業基盤を構築したい創業期企業</li>
+                <li>・デジタルマーケティングを強化したい従来型企業</li>
+              </ul>
+            </div>
+          </div>
+          <div class="target-pain-points fade-in delay-400">
+            <div style="height: 3rem;"></div>
+            <h3>ターゲット顧客の課題</h3>
+            <ul class="pain-points-list">
+              <li>
+                <div class="pain-point-icon"></div>
+                <span>・営業人材の採用・育成の難しさ</span>
+              </li>
+              <li>
+                <div class="pain-point-icon"></div>
+                <span>・マーケティング専門知識の不足</span>
+              </li>
+              <li>
+                <div class="pain-point-icon"></div>
+                <span>・デジタルトランスフォーメーションの遅れ</span>
+              </li>
+              <li>
+                <div class="pain-point-icon"></div>
+                <span>・売上拡大のための効果的な手法の模索</span>
+              </li>
+              <li>
+                <div class="pain-point-icon"></div>
+                <span>・限られたリソースでの効率的な成長戦略</span>
+              </li>
+              <li>
+                <div class="pain-point-icon"></div>
+                <span>・営業とマーケティングの連携不足</span>
+              </li>
+              <li>
+                <div class="pain-point-icon"></div>
+                <span>・データ活用ノウハウの欠如</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Competitive Analysis Section -->
+    <section class="section competitive-analysis-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title fade-in">COMPETITIVE ANALYSIS</h2>
+          <p class="section-subtitle fade-in delay-300">競合分析</p>
+        </div>
+        <div class="competitive-content">
+          <div class="competitors fade-in delay-300">
+            <h3>競合の特徴</h3>
+            <div class="competitor-items">
+              <div class="competitor-item">
+                <h4>大手広告代理店</h4>
+                <p><strong>強み:</strong> 総合力、ブランド力、豊富なリソース</p>
+                <p><strong>弱み:</strong> 中小企業向けの柔軟性に欠ける、コスト高</p>
+              </div>
+              <div style="height: 3rem;"></div>
+              <div class="competitor-item">
+                <h4>専門営業代行会社</h4>
+                <p><strong>強み:</strong> 特定業界に特化、専門性の高い営業力</p>
+                <p><strong>弱み:</strong> マーケティング連携が弱い、総合支援力に欠ける</p>
+              </div>
+              <div style="height: 3rem;"></div>
+              <div class="competitor-item">
+                <h4>フリーランスコンサルタント</h4>
+                <p><strong>強み:</strong> 低コスト、柔軟な対応</p>
+                <p><strong>弱み:</strong> リソース不足、組織的対応力の欠如</p>
+              </div>
+              <div style="height: 3rem;"></div>
+              <div class="competitor-item">
+                <h4>デジタルマーケティング会社</h4>
+                <p><strong>強み:</strong> 専門性の高いデジタルスキル</p>
+                <p><strong>弱み:</strong> 営業プロセスとの連携が弱い</p>
+              </div>
+            </div>
+          </div>
+          <div style="height: 3rem;"></div>
+          <div class="differentiation fade-in delay-400">
+            <h3>当社の差別化ポイント</h3>
+            <ul class="differentiation-list">
+              <li>
+                <div class="diff-point-icon"></div>
+                <span>・営業×マーケティングの一気通貫支援</span>
+              </li>
+              <li>
+                <div class="diff-point-icon"></div>
+                <span>・高い専門性を持つ外部パートナーネットワーク</span>
+              </li>
+              <li>
+                <div class="diff-point-icon"></div>
+                <span>・データ分析に基づいた科学的アプローチ</span>
+              </li>
+              <li>
+                <div class="diff-point-icon"></div>
+                <span>・フレキシブルな対応力とコスト効率の高いリソース活用</span>
+              </li>
+              <li>
+                <div class="diff-point-icon"></div>
+                <span>・中小企業に特化したカスタマイズサービス</span>
+              </li>
+              <li>
+                <div class="diff-point-icon"></div>
+                <span>・業界特化型アプローチによる深い知見の提供</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Market Positioning Section -->
+    <section class="section market-positioning-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title fade-in">MARKET POSITIONING</h2>
+          <p class="section-subtitle fade-in delay-300">市場ポジショニング</p>
+        </div>
+        <div class="positioning-content fade-in delay-300">
+          <div class="positioning-chart">
+            <div class="chart-container">
+              <canvas id="positioningCanvas"></canvas>
+            </div>
+          </div>
+          <div class="positioning-description fade-in delay-400">
+            <p>
+              合同会社無限は、高い専門性と総合力のバランスを取り、柔軟な対応力とコスト効率の高さを強みとしています。特に営業とマーケティングの融合領域において、中小企業向けに最適化されたサービスを提供し、独自のポジションを確立しています。大手代理店の総合力とフリーランスの機動性の良いところを兼ね備えた、中小企業にとって最適なビジネスパートナーを目指しています。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Market Opportunity Section -->
+    <section class="section market-opportunity-section">
+      <div class="particles-container"></div>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title fade-in">MARKET OPPORTUNITY</h2>
+          <p class="section-subtitle fade-in delay-300">市場機会</p>
+        </div>
+        <div class="opportunity-content">
+          <div class="opportunity-item fade-in delay-300">
+            <h3>営業DXの加速</h3>
+            <p>デジタル化による営業プロセスの変革が進行中。従来の営業手法とデジタルツールを組み合わせた新しい営業スタイルが求められています。当社は営業のデジタル化を支援し、効率的な営業活動の実現を支援します。</p>
+          </div>
+          <div class="opportunity-item fade-in delay-400">
+            <h3>中小企業のDX需要拡大</h3>
+            <p>大企業だけでなく中小企業においてもDXの必要性が高まっています。限られたリソースで効果的にDXを進めるパートナーへのニーズが拡大中です。</p>
+          </div>
+          <div class="opportunity-item fade-in delay-500">
+            <h3>データ活用ニーズの高まり</h3>
+            <p>ビジネス意思決定におけるデータ活用の重要性が増大し、データ分析・活用サービスへの需要が拡大しています。営業・マーケティング活動の可視化と科学的アプローチが求められています。</p>
+          </div>
+          <div class="opportunity-item fade-in delay-600">
+            <h3>リモート環境下での新たな営業スタイル</h3>
+            <p>対面営業からデジタルチャネルを活用した営業スタイルへの移行が進んでいます。オンライン商談、バーチャルイベント、デジタルコンテンツを活用した営業手法の確立が急務となっています。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-info">
+          <div class="footer-logo">
+            <h2>合同会社無限</h2>
+          </div>
+          <p>〒111-0042 東京都台東区寿三丁目10番6号</p>
+          <p>Tel: 090-3597-1185</p>
+          <p>Email: info@mugenllc.click</p>
+        </div>
+        <div class="footer-nav">
+          <ul>
+            <li><a href="company.html">会社概要</a></li>
+            <li><a href="services.html">事業内容</a></li>
+            <li><a href="market.html">市場分析</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2025 合同会社無限 All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="js/luxury-background.js"></script>
+  <script src="js/luxury-animations.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Chart.js Initialization Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Market Trend Chart
+      const trendCtx = document.getElementById('marketTrendCanvas');
+      if (trendCtx) {
+        const marketTrendChart = new Chart(trendCtx, {
+          type: 'line',
+          data: {
+            labels: ['2020', '2021', '2022', '2023', '2024', '2025(予測)'],
+            datasets: [
+              {
+                label: '営業代行市場',
+                data: [4800, 5100, 5400, 5700, 6050, 6400],
+                borderColor: 'rgba(212, 175, 55, 0.7)',
+                backgroundColor: 'rgba(212, 175, 55, 0.05)',
+                tension: 0.4,
+                fill: true
+              },
+              {
+                label: 'デジタルマーケティング市場',
+                data: [9000, 10300, 11800, 13500, 15000, 17200],
+                borderColor: 'rgba(184, 115, 51, 0.7)',
+                backgroundColor: 'rgba(184, 115, 51, 0.05)',
+                tension: 0.4,
+                fill: true
+              }
+            ]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: true,
+            aspectRatio: 2.5,
+            plugins: {
+              legend: {
+                position: 'top',
+                labels: {
+                  color: 'rgba(255, 255, 255, 0.7)',
+                  font: {
+                    family: "'Noto Sans JP', sans-serif",
+                    size: 12
+                  }
+                }
+              },
+              tooltip: {
+                mode: 'index',
+                intersect: false,
+                callbacks: {
+                  label: function (context) {
+                    return context.dataset.label + ': ' + context.parsed.y + '億円';
+                  }
+                }
+              }
+            },
+            scales: {
+              x: {
+                grid: {
+                  color: 'rgba(255, 255, 255, 0.1)'
+                },
+                ticks: {
+                  color: 'rgba(255, 255, 255, 0.7)',
+                  font: {
+                    family: "'Noto Sans JP', sans-serif",
+                    size: 12
+                  }
+                }
+              },
+              y: {
+                grid: {
+                  color: 'rgba(255, 255, 255, 0.1)'
+                },
+                ticks: {
+                  color: 'rgba(255, 255, 255, 0.7)',
+                  callback: function (value) {
+                    return value + '億円';
+                  },
+                  font: {
+                    family: "'Noto Sans JP', sans-serif",
+                    size: 12
+                  }
+                }
+              }
+            },
+            animation: {
+              duration: 2000,
+              easing: 'easeOutQuart'
+            }
+          }
+        });
+
+        // Animate chart when in view
+        const trendObserver = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              marketTrendChart.update();
+              trendObserver.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.5 });
+
+        trendObserver.observe(trendCtx);
+      }
+
+      // Positioning Chart
+      const positioningCtx = document.getElementById('positioningCanvas');
+      if (positioningCtx) {
+        const positioningChart = new Chart(positioningCtx, {
+          type: 'scatter',
+          data: {
+            datasets: [
+              {
+                label: '大手代理店',
+                data: [{ x: 6.5, y: 8.5 }],
+                backgroundColor: 'rgba(255, 255, 255, 0.3)',
+                pointRadius: 15,
+                pointHoverRadius: 20
+              },
+              {
+                label: '専門代行',
+                data: [{ x: 8, y: 4.5 }],
+                backgroundColor: 'rgba(255, 255, 255, 0.3)',
+                pointRadius: 15,
+                pointHoverRadius: 20
+              },
+              {
+                label: 'フリーランス',
+                data: [{ x: 3, y: 2 }],
+                backgroundColor: 'rgba(255, 255, 255, 0.3)',
+                pointRadius: 15,
+                pointHoverRadius: 20
+              },
+              {
+                label: '当社',
+                data: [{ x: 7, y: 6.5 }],
+                backgroundColor: 'rgba(212, 175, 55, 0.8)',
+                pointRadius: 18,
+                pointHoverRadius: 22,
+                borderColor: '#d4af37',
+                borderWidth: 2
+              }
+            ]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: true,
+            aspectRatio: 2.5,
+            plugins: {
+              legend: {
+                position: 'top',
+                labels: {
+                  color: 'rgba(255, 255, 255, 0.7)',
+                  font: {
+                    family: "'Noto Sans JP', sans-serif",
+                    size: 12
+                  }
+                }
+              },
+              tooltip: {
+                callbacks: {
+                  label: function (context) {
+                    return context.dataset.label;
+                  }
+                }
+              }
+            },
+            scales: {
+              x: {
+                min: 0,
+                max: 10,
+                title: {
+                  display: true,
+                  text: '専門性',
+                  color: 'rgba(255, 255, 255, 0.7)',
+                  font: {
+                    family: "'Noto Sans JP', sans-serif",
+                    size: 14
+                  }
+                },
+                grid: {
+                  color: 'rgba(255, 255, 255, 0.1)'
+                },
+                ticks: {
+                  color: 'rgba(255, 255, 255, 0.7)',
+                  font: {
+                    family: "'Noto Sans JP', sans-serif",
+                    size: 12
+                  }
+                }
+              },
+              y: {
+                min: 0,
+                max: 10,
+                title: {
+                  display: true,
+                  text: 'サービス総合力',
+                  color: 'rgba(255, 255, 255, 0.7)',
+                  font: {
+                    family: "'Noto Sans JP', sans-serif",
+                    size: 14
+                  }
+                },
+                grid: {
+                  color: 'rgba(255, 255, 255, 0.1)'
+                },
+                ticks: {
+                  color: 'rgba(255, 255, 255, 0.7)',
+                  font: {
+                    family: "'Noto Sans JP', sans-serif",
+                    size: 12
+                  }
+                }
+              }
+            },
+            animation: {
+              duration: 1500,
+              easing: 'easeOutQuart'
+            }
+          }
+        });
+
+        // Animate chart when in view
+        const positioningObserver = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              positioningChart.update();
+              positioningObserver.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.5 });
+
+        positioningObserver.observe(positioningCtx);
+      }
+    });
+  </script>
+</body>
+
+</html>

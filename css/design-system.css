@@ -1,0 +1,335 @@
+/* 
+ * MUGEN LLC - Luxury Design System
+ * ============================================
+ * Core design tokens and variables for the Mugen LLC website
+ */
+
+:root {
+  /* Color Palette */
+  --color-bg-primary: #000000;
+  --color-bg-secondary: #0a0a0a;
+  --color-bg-tertiary: #111111;
+  --color-bg-overlay: rgba(0, 0, 0, 0.8);
+
+  --color-text-primary: #ffffff;
+  --color-text-secondary: rgba(255, 255, 255, 0.8);
+  --color-text-tertiary: rgba(255, 255, 255, 0.6);
+
+  --color-accent-primary: #d4af37;
+  /* Gold */
+  --color-accent-secondary: #b87333;
+  /* Bronze */
+  --color-accent-tertiary: #c0c0c0;
+  /* Silver */
+
+  --color-success: rgba(50, 200, 100, 0.2);
+  --color-error: rgba(200, 50, 50, 0.2);
+
+  /* Typography */
+  --font-primary: 'Noto Serif JP', serif;
+  --font-secondary: 'Noto Sans JP', sans-serif;
+  --font-size-xs: 0.75rem;
+  /* 12px */
+  --font-size-sm: 0.875rem;
+  /* 14px */
+  --font-size-base: 1rem;
+  /* 16px */
+  --font-size-md: 1.125rem;
+  /* 18px */
+  --font-size-lg: 1.25rem;
+  /* 20px */
+  --font-size-xl: 1.5rem;
+  /* 24px */
+  --font-size-2xl: 1.875rem;
+  /* 30px */
+  --font-size-3xl: 2.25rem;
+  /* 36px */
+  --font-size-4xl: 3rem;
+  /* 48px */
+  --font-size-5xl: 3.75rem;
+  /* 60px */
+
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.8;
+
+  --letter-spacing-tight: -0.025em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.025em;
+  --letter-spacing-wider: 0.05em;
+  --letter-spacing-widest: 0.1em;
+
+  /* Spacing */
+  --spacing-0: 0;
+  --spacing-1: 0.25rem;
+  /* 4px */
+  --spacing-2: 0.5rem;
+  /* 8px */
+  --spacing-3: 0.75rem;
+  /* 12px */
+  --spacing-4: 1rem;
+  /* 16px */
+  --spacing-5: 1.25rem;
+  /* 20px */
+  --spacing-6: 1.5rem;
+  /* 24px */
+  --spacing-8: 2rem;
+  /* 32px */
+  --spacing-10: 2.5rem;
+  /* 40px */
+  --spacing-12: 3rem;
+  /* 48px */
+  --spacing-16: 4rem;
+  /* 64px */
+  --spacing-20: 5rem;
+  /* 80px */
+  --spacing-24: 6rem;
+  /* 96px */
+  --spacing-32: 8rem;
+  /* 128px */
+
+  /* Sizes */
+  --header-height: 80px;
+  --header-height-mobile: 60px;
+  --container-max-width: 1440px;
+  --content-max-width: 1200px;
+
+  /* Borders and Radiuses */
+  --border-radius-sm: 2px;
+  --border-radius-md: 4px;
+  --border-radius-lg: 8px;
+  --border-radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+
+  /* Transitions */
+  --transition-duration-fast: 150ms;
+  --transition-duration-normal: 300ms;
+  --transition-duration-slow: 500ms;
+  --transition-duration-slower: 800ms;
+
+  --transition-timing-ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --transition-timing-ease-in: cubic-bezier(0.42, 0, 1, 1);
+  --transition-timing-ease-out: cubic-bezier(0, 0, 0.58, 1);
+  --transition-timing-ease-in-out: cubic-bezier(0.42, 0, 0.58, 1);
+  --transition-timing-luxury: cubic-bezier(0.76, 0, 0.24, 1);
+
+  /* Z-indices */
+  --z-index-behind: -1;
+  --z-index-default: 1;
+  --z-index-above: 10;
+  --z-index-header: 100;
+  --z-index-dropdown: 200;
+  --z-index-modal: 300;
+  --z-index-overlay: 400;
+  --z-index-loader: 500;
+  --z-index-toast: 600;
+}
+
+/* Luxury Design Utilities */
+.text-gradient {
+  background: linear-gradient(to right, var(--color-accent-primary), var(--color-accent-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.gold-border {
+  border: 1px solid var(--color-accent-primary);
+}
+
+.gold-border-hover {
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  transition: border-color var(--transition-duration-normal) var(--transition-timing-luxury);
+}
+
+.gold-border-hover:hover {
+  border-color: var(--color-accent-primary);
+}
+
+.backdrop-blur {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.luxury-shadow {
+  box-shadow: 0 10px 30px -10px rgba(212, 175, 55, 0.1);
+}
+
+/* Image Placeholder Helpers */
+.img-placeholder {
+  position: relative;
+  background: linear-gradient(45deg, var(--color-bg-secondary), var(--color-bg-tertiary));
+  overflow: hidden;
+}
+
+.img-placeholder::before {
+  content: attr(data-placeholder);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-text-tertiary);
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-sm);
+  white-space: nowrap;
+}
+
+.img-placeholder::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.05), transparent);
+  animation: img-shine 2s infinite;
+}
+
+@keyframes img-shine {
+  0% {
+    left: -100%;
+  }
+
+  20% {
+    left: 100%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+/* Aspect Ratios */
+.aspect-ratio-1x1 {
+  aspect-ratio: 1 / 1;
+}
+
+.aspect-ratio-4x3 {
+  aspect-ratio: 4 / 3;
+}
+
+.aspect-ratio-16x9 {
+  aspect-ratio: 16 / 9;
+}
+
+.aspect-ratio-21x9 {
+  aspect-ratio: 21 / 9;
+}
+
+/* Dark theme optimizations */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  :root {
+    --color-accent-primary: #ffff00;
+    --color-accent-secondary: #ffffff;
+  }
+
+  a:focus,
+  button:focus {
+    outline: 2px solid var(--color-accent-primary);
+    outline-offset: 2px;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* 
+ * ヘッダーz-index修正
+ * design-system.css の最後に追加してください
+ */
+
+/* z-index値を更新 - より確実な値に変更 */
+:root {
+  --z-index-behind: -10;
+  --z-index-webgl: -5;
+  --z-index-default: 1;
+  --z-index-above: 10;
+  --z-index-header: 100;
+  --z-index-dropdown: 200;
+  --z-index-modal: 300;
+  --z-index-overlay: 400;
+  --z-index-loader: 500;
+  --z-index-toast: 600;
+
+}
+
+/* ヘッダー要素の確実な設定 */
+.header {
+  z-index: var(--z-index-header) !important;
+  pointer-events: auto !important;
+  position: fixed !important;
+}
+
+.header-inner {
+  z-index: calc(var(--z-index-header) + 1) !important;
+  position: relative !important;
+  pointer-events: auto !important;
+}
+
+.nav {
+  z-index: calc(var(--z-index-header) + 2) !important;
+  pointer-events: auto !important;
+}
+
+.nav-item a {
+  z-index: calc(var(--z-index-header) + 3) !important;
+  pointer-events: auto !important;
+  position: relative !important;
+}
+
+.logo a {
+  z-index: calc(var(--z-index-header) + 3) !important;
+  pointer-events: auto !important;
+  position: relative !important;
+}
+
+/* WebGLキャンバスを確実に背景に */
+#webgl-canvas {
+  z-index: var(--z-index-behind) !important;
+  pointer-events: none !important;
+}
+
+/* その他の背景要素 */
+.particles-container {
+  z-index: calc(var(--z-index-behind) + 1) !important;
+  pointer-events: none !important;
+}
+
+.parallax-layer {
+  z-index: calc(var(--z-index-behind) + 2) !important;
+  pointer-events: none !important;
+}
+
+/* デバッグ用（問題解決後は削除） */
+.header-debug {
+  background-color: rgba(255, 0, 0, 0.2) !important;
+  border: 2px solid red !important;
+}
+
+.nav-debug a {
+  background-color: rgba(0, 255, 0, 0.2) !important;
+  border: 1px solid green !important;
+}

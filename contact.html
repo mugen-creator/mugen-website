@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <title>お問い合わせ | 合同会社無限</title>
+  <meta name="description" content="合同会社無限へのお問い合わせはこちらから。営業代行やマーケティング支援に関するご相談を承ります。">
+
+  <!-- OGP Tags -->
+  <meta property="og:title" content="お問い合わせ | 合同会社無限">
+  <meta property="og:description" content="合同会社無限へのお問い合わせはこちらから。営業代行やマーケティング支援に関するご相談を承ります。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mugenllc.click/contact.html">
+  <meta property="og:image" content="https://mugenllc.click/images/ogp.jpg">
+  <meta property="og:site_name" content="合同会社無限">
+  <meta property="og:locale" content="ja_JP">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="お問い合わせ | 合同会社無限">
+  <meta name="twitter:description" content="合同会社無限へのお問い合わせはこちらから。営業代行やマーケティング支援に関するご相談を承ります。">
+  <meta name="twitter:image" content="https://mugenllc.click/images/ogp.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/reset-base.css">
+  <link rel="stylesheet" href="css/layout-components.css">
+  <link rel="stylesheet" href="css/animations-effects.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/text-enhancements.css">
+  <link rel="stylesheet" href="css/header-urgent-fix.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Loader -->
+  <div class="loader">
+    <div class="loader-content">
+      <div class="loader-logo">CONTACT</div>
+    </div>
+  </div>
+
+  <!-- WebGL Background Canvas -->
+  <div id="webgl-canvas"></div>
+
+  <!-- Page Transition Element -->
+  <div class="page-transition"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <a href="index.html">
+          <h1>合同会社無限</h1>
+        </a>
+      </div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="company.html">COMPANY<span class="nav-ja">会社概要</span></a></li>
+          <li class="nav-item"><a href="services.html">SERVICES<span class="nav-ja">事業内容</span></a></li>
+          <li class="nav-item"><a href="market.html">MARKET<span class="nav-ja">市場分析</span></a></li>
+          <li class="nav-item active"><a href="contact.html">CONTACT<span class="nav-ja">お問い合わせ</span></a></li>
+        </ul>
+      </nav>
+      <div class="menu-trigger">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="page-content">
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title split-heading">お問い合わせ</h1>
+      </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="section contact-information-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-details fade-in delay-300">
+            <h2 class="section-title">CONTACT INFORMATION</h2>
+            <div class="contact-item">
+              <h3>電話番号</h3>
+              <p>090-3597-1185（平日 10:00-19:00）</p>
+            </div>
+            <div class="contact-item">
+              <h3>メール</h3>
+              <p>info@mugenllc.click</p>
+            </div>
+            <div class="contact-address">
+              <h3>所在地</h3>
+              <p>〒111-0042<br>東京都台東区寿三丁目10番6号</p>
+            </div>
+          </div>
+
+          <div class="contact-form-container fade-in delay-400">
+            <h2 class="section-title">CONTACT FORM</h2>
+            <form class="contact-form" id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/contact-success.html">
+              <input type="hidden" name="form-name" value="contact">
+              <p class="hidden">
+                <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+              </p>
+              <div class="form-group">
+                <label for="name">お名前 <span class="required">*</span></label>
+                <input type="text" id="name" name="name" required class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="company">会社名</label>
+                <input type="text" id="company" name="company" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="email">メールアドレス <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required class="form-control"
+                  data-validation-message="有効なメールアドレスを入力してください">
+              </div>
+              <div class="form-group">
+                <label for="phone">電話番号</label>
+                <input type="tel" id="phone" name="phone" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="inquiry-type">お問い合わせ種別 <span class="required">*</span></label>
+                <select id="inquiry-type" name="inquiry-type" required class="form-control">
+                  <option value="">選択してください</option>
+                  <option value="service">サービスについて</option>
+                  <option value="quote">お見積り依頼</option>
+                  <option value="partnership">パートナーシップについて</option>
+                  <option value="recruitment">採用について</option>
+                  <option value="other">その他</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">お問い合わせ内容 <span class="required">*</span></label>
+                <textarea id="message" name="message" rows="5" required class="form-control"></textarea>
+              </div>
+              <div class="form-group privacy-policy">
+                <input type="checkbox" id="privacy" name="privacy" required>
+                <label for="privacy">個人情報保護方針に同意する <span class="required">*</span></label>
+              </div>
+              <div class="form-submit">
+                <button type="submit" class="btn btn-magnetic">送信する</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Options Section -->
+    <section class="section service-options-section">
+      <div class="particles-container"></div>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title fade-in">SERVICE OPTIONS</h2>
+          <p class="section-subtitle fade-in delay-300">サービスメニュー</p>
+        </div>
+        <div class="service-options-grid">
+          <div class="service-option-card fade-in delay-300">
+            <div class="service-option-icon">
+              <div class="icon-circle"></div>
+            </div>
+            <h3>スポット案件</h3>
+            <ul>
+              <li>プロジェクト単位の一括契約</li>
+              <li>営業代行・マーケティング施策の個別実施</li>
+              <li>月額25万円〜</li>
+              <li>最短2週間から対応可能</li>
+            </ul>
+            <div style="height: 2rem;"></div>
+            <a href="#contactForm" class="btn btn-sm">お問い合わせ</a>
+          </div>
+          <div style="height: 3rem;"></div>
+          <div class="service-option-card fade-in delay-400">
+            <div class="service-option-icon">
+              <div class="icon-circle"></div>
+            </div>
+            <h3>月額サポートプラン</h3>
+            <ul>
+              <li>継続的な営業・マーケティング支援</li>
+              <li>定期的なレポーティングと改善提案</li>
+              <li>月額15万円〜</li>
+              <li>最低契約期間3ヶ月〜</li>
+            </ul>
+            <div style="height: 2rem;"></div>
+            <a href="#contactForm" class="btn btn-sm">お問い合わせ</a>
+          </div>
+          <div style="height: 3rem;"></div>
+          <div class="service-option-card fade-in delay-500">
+            <div class="service-option-icon">
+              <div class="icon-circle"></div>
+            </div>
+            <h3>コンサルティングプラン</h3>
+            <ul>
+              <li>営業・マーケティング戦略の策定</li>
+              <li>プロセス改善・組織構築支援</li>
+              <li>単発：30万円〜</li>
+              <li>月額：20万円〜</li>
+            </ul>
+            <div style="height: 2rem;"></div>
+            <a href="#contactForm" class="btn btn-sm">お問い合わせ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title fade-in">FAQ</h2>
+          <p class="section-subtitle fade-in delay-300">よくあるご質問</p>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item fade-in delay-300">
+            <div class="faq-question" tabindex="0">
+              <h3>サービス料金はどのように決まりますか？</h3>
+              <div class="faq-toggle"></div>
+            </div>
+            <div class="faq-answer">
+              <p>サービス内容や範囲、プロジェクトの規模に応じて個別にお見積りいたします。基本的には、プロジェクト単位の一括料金と月額サポート料金の2種類の料金体系をご用意しております。詳細についてはお問い合わせください。
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item fade-in delay-400">
+            <div class="faq-question" tabindex="0">
+              <h3>どのような業界・業種に対応していますか？</h3>
+              <div class="faq-toggle"></div>
+            </div>
+            <div class="faq-answer">
+              <p>IT/SaaS、製造業、専門サービス業界を中心に、幅広い業種に対応しております。特に、BtoBビジネスモデルの企業様に強みを持っています。業界特化型のサービスも提供しておりますので、お気軽にご相談ください。
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item fade-in delay-500">
+            <div class="faq-question" tabindex="0">
+              <h3>サービス開始までどのくらいの期間がかかりますか？</h3>
+              <div class="faq-toggle"></div>
+            </div>
+            <div class="faq-answer">
+              <p>サービス内容によって異なりますが、基本的には契約締結後2週間〜1ヶ月程度でサービスを開始いたします。事前にキックオフミーティングを行い、目標や進め方について綿密に打ち合わせを行った上でサービスを提供します。
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item fade-in delay-600">
+            <div class="faq-question" tabindex="0">
+              <h3>契約期間の縛りはありますか？</h3>
+              <div class="faq-toggle"></div>
+            </div>
+            <div class="faq-answer">
+              <p>月額サポートプランの場合は、基本的に最低契約期間を3ヶ月としております。プロジェクト単位の契約の場合は、プロジェクト完了までの期間となります。詳細な条件については、個別にご相談ください。</p>
+            </div>
+          </div>
+
+          <div class="faq-item fade-in delay-700">
+            <div class="faq-question" tabindex="0">
+              <h3>成果報酬型の契約は可能ですか？</h3>
+              <div class="faq-toggle"></div>
+            </div>
+            <div class="faq-answer">
+              <p>一部のサービスにおいて、基本料金＋成果報酬型の契約も可能です。ただし、業界や商材、目標設定によって条件が異なりますので、詳細についてはお問い合わせください。</p>
+            </div>
+          </div>
+
+          <div class="faq-item fade-in delay-800">
+            <div class="faq-question" tabindex="0">
+              <h3>外部パートナーとの連携はどのように行われますか？</h3>
+              <div class="faq-toggle"></div>
+            </div>
+            <div class="faq-answer">
+              <p>
+                当社がプロジェクト全体のディレクションを担当し、必要に応じて最適な外部パートナーを選定・連携します。クライアント様は当社の窓口担当者とやり取りするだけで、複数の専門家の知見やスキルを活用できる体制を整えています。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+      <div class="particles-container"></div>
+      <div class="container">
+        <div class="cta-content fade-in">
+          <h2>まずはお気軽にご相談ください</h2>
+          <p>貴社の課題や目標についてお聞かせください。<br>最適なソリューションをご提案いたします。</p>
+          <div class="cta-buttons">
+            <a href="#contactForm" class="btn btn-magnetic">お問い合わせフォームへ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-info">
+          <div class="footer-logo">
+            <h2>合同会社無限</h2>
+          </div>
+          <p>〒111-0042 東京都台東区寿三丁目10番6号</p>
+          <p>Tel: 090-3597-1185</p>
+          <p>Email: info@mugenllc.click</p>
+        </div>
+        <div class="footer-nav">
+          <ul>
+            <li><a href="company.html">会社概要</a></li>
+            <li><a href="services.html">事業内容</a></li>
+            <li><a href="market.html">市場分析</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2025 合同会社無限 All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="js/luxury-background.js"></script>
+  <script src="js/luxury-animations.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Form Validation Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+
+          if (targetElement) {
+            // Calculate offset considering fixed header
+            const headerHeight = document.querySelector('.header')?.offsetHeight || 0;
+            const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - headerHeight - 20;
+
+            // Smooth scroll to target
+            window.scrollTo({
+              top: targetPosition,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+
+      // Form validation
+      const contactForm = document.getElementById('contactForm');
+      if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+          // Basic form validation
+          const isValid = contactForm.checkValidity();
+
+          if (!isValid) {
+            e.preventDefault();
+            // Highlight invalid fields with custom styling
+            const invalidFields = contactForm.querySelectorAll(':invalid');
+            invalidFields.forEach(field => {
+              field.classList.add('invalid');
+
+              // Add validation message
+              let message = field.nextElementSibling;
+              if (!message || !message.classList.contains('validation-message')) {
+                message = document.createElement('div');
+                message.className = 'validation-message';
+                field.parentNode.insertBefore(message, field.nextElementSibling);
+              }
+
+              message.textContent = field.dataset.validationMessage || '入力内容を確認してください';
+
+              // Remove invalid class on input
+              field.addEventListener('input', () => {
+                if (field.validity.valid) {
+                  field.classList.remove('invalid');
+                  if (message) {
+                    message.textContent = '';
+                  }
+                }
+              });
+            });
+
+            // Scroll to first invalid field
+            if (invalidFields.length > 0) {
+              const firstInvalidField = invalidFields[0];
+              const headerHeight = document.querySelector('.header')?.offsetHeight || 0;
+              const fieldPosition = firstInvalidField.getBoundingClientRect().top + window.scrollY - headerHeight - 20;
+
+              window.scrollTo({
+                top: fieldPosition,
+                behavior: 'smooth'
+              });
+
+              firstInvalidField.focus();
+            }
+          }
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>
