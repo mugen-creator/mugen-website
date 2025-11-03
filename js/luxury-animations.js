@@ -269,6 +269,10 @@ class LuxuryAnimations {
   }
 
   setupContactForm() {
+    // Disabled to allow Netlify Forms to handle submission natively
+    return;
+
+    /* Original code commented out for Netlify Forms compatibility
     if (!this.contactForm) return;
 
     this.contactForm.addEventListener('submit', e => {
@@ -325,6 +329,7 @@ class LuxuryAnimations {
         });
       }
     });
+    */
   }
 
   setupPageTransitions() {
